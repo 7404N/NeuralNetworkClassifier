@@ -1,4 +1,4 @@
 NeuralNetworkClassifier
 =======================
 
-Simple non-linear neural network classifier impl with torch
+Simple non-linear neural network multi classes classifier impl with torch

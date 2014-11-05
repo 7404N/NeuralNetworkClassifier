@@ -46,12 +46,12 @@ function genTrainset()
 	end
 
 	--normalize
-	for j=1, dimensions do
-		local m = inputs[{{},{j}}]:mean()
-		local div = inputs[{{},{j}}]:std()
-		inputs[{{},{j}}]:add(-m)
-		inputs[{{},{j}}]:div(div)
-	end
+	--for j=1, dimensions do
+	--	local m = inputs[{{},{j}}]:mean()
+	--	local div = inputs[{{},{j}}]:std()
+	--	inputs[{{},{j}}]:add(-m)
+	--	inputs[{{},{j}}]:div(div)
+	--end
 
 	for i=1,dataset:size() do
 		dataset[i] = {inputs[i], outputs[i]}
